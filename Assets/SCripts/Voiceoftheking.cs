@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class NewBehaviourScript : MonoBehaviour
+public class Voiceoftheking : MonoBehaviour
 {
 
     public float distance = 10f, angle = 30f, height = 1f;
@@ -14,7 +14,9 @@ public class NewBehaviourScript : MonoBehaviour
     int scanps = 30;
     public LayerMask layers;
     public LayerMask exclude;
-  
+    public Vector3 pushdir;
+    public Rigidbody temprb;
+    public float yeetdistance;
    
     Collider[] collisiders = new Collider[50];
     public GameObject player;
@@ -24,24 +26,27 @@ public class NewBehaviourScript : MonoBehaviour
 
     Rigidbody enemysrb;
     public List<GameObject> objectsdetetced = new List<GameObject>();
-    // Start is called before the first frame update
+ 
     void Start()
     {
         scanint = 1f / scanps;
         enemysrb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         // Debug.Log(scanint);
         scantimer -= Time.deltaTime;
             scantimer += scanint;
             Scan();
+
+        if (Input.GetKeyDown(KeyCode.E))
+        {
+            Voice();
+        }
        
       
-        // Debug.Log(barfull);
-        // checking if this works code below. erase if not redrawing th mesh 
+        
 
     }
 
@@ -173,6 +178,18 @@ public class NewBehaviourScript : MonoBehaviour
     private void OnValidate()
     {
         mesh = Createmesh();
+    }
+
+    private void Voice()
+    {
+        Debug.Log("got here");
+        for (int i = 0; i < objectsdetetced.Count; i++)
+        {
+            pushdir = -this.transform.position + objectsdetetced[i].transform.position;
+            temprb = objectsdetetced[i].GetComponent<Rigidbody>();
+            temprb.AddForce(pushdir * yeetdistance);
+            temprb.AddForce(Vector3.up *2* yeetdistance);
+        }
     }
 
     private void OnDrawGizmos()
