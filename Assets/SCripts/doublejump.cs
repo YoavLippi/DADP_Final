@@ -7,8 +7,8 @@ public class doublejump : MonoBehaviour
    
     public int jumps=2;
 
-    CharacterController Cr;
-    float jumpforce;
+    public CharacterController Cr;
+   public float jumpforce;
 
     private void Start()
     {
@@ -21,7 +21,7 @@ public class doublejump : MonoBehaviour
 */
     private void Update()
     {
-        if (Physics.Raycast(transform.position,Vector3.down, 0.7f))
+        if (Cr.isGrounded)
         {
             jumps = 2;
         }
@@ -30,8 +30,10 @@ public class doublejump : MonoBehaviour
         {
             if (jumps>0)
             {
+                Debug.Log("got here");
                 jumps--;
-                Cr.attachedRigidbody.AddForce(Vector3.up * jumpforce);
+                Cr.Move(Vector3.up * jumpforce);
+                //Cr.attachedRigidbody.AddForce(Vector3.up * jumpforce);
                 
                 
             }

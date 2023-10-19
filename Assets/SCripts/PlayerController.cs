@@ -13,14 +13,14 @@ public Camera playerCamera;
 
     public float lookSpeed = 2f;
     public float lookXLimit = 45f;
-
+ 
     public bool Shoot;
 
     private Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     
     private bool canMove = true;
-    
+    private int jumps;
 
     private CharacterController _characterController;
 
@@ -48,9 +48,10 @@ public Camera playerCamera;
 
         #region Handles Jumping
 
-            if (Input.GetButton("Jump") && canMove && _characterController.isGrounded)
+            if (Input.GetButtonDown("Jump") && canMove && (_characterController.isGrounded || jumps>0 ))
             {
                 moveDirection.y = JumpPower;
+                 jumps--;
             }
             else
             {
@@ -58,9 +59,12 @@ public Camera playerCamera;
             }
 
             if (!_characterController.isGrounded)
-            {
+            {   
                 moveDirection.y -= gravity * Time.deltaTime;
-            }
+            }else
+        {
+            jumps = 1;
+        }
         #endregion
 
         #region Handles Rotation
