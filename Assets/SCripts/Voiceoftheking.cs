@@ -7,6 +7,7 @@ public class Voiceoftheking : MonoBehaviour
 {
 
     public float distance = 10f, angle = 30f, height = 1f;
+    public float changetallnss;
     Mesh mesh;
    
     public Color clmesh = Color.red;
@@ -101,7 +102,9 @@ public class Voiceoftheking : MonoBehaviour
         Vector3[] verts = new Vector3[numverts];
         int[] triangles = new int[numverts];
         Vector3 btml = Quaternion.Euler(0, -angle, 0) * Vector3.forward * distance;
+      //  btml.y = -changetallnss;
         Vector3 btmr = Quaternion.Euler(0, angle, 0) * Vector3.forward * distance;
+       // btmr.y = -changetallnss;
         // Vector3 btmc = Vector3.zero; ;
         Vector3 btmc = new Vector3(0, 0, 0.5f);
         Vector3 tc = btmc + Vector3.up * height;
