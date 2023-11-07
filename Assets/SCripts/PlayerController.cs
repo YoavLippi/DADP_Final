@@ -26,9 +26,11 @@ public Camera playerCamera;
 
     public void Start()
     {
+        
         _characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
+        
     }
 
     public void Update()
