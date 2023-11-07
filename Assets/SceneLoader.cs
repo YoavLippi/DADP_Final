@@ -3,17 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-
 public class SceneLoader : MonoBehaviour
 {
     public void LoadNileScene()
     {
-        SceneManager.LoadScene("NileRiver");
+        SceneManager.LoadScene("Scenes/NileRiver");
     }
 
-    public void LoadTHeHubScene()
+    public void LoadTheHub()
     {
         SceneManager.LoadScene("TheHub");
     }
-    
 }
