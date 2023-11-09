@@ -5,10 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - 'Enemy '
-  - Enemy
   - NileRiver
   - PlayerCollision
   - PyramidsOfGiza
+  - ValleyOfKings
+  - TempleOfRa
   layers:
   - Default
   - TransparentFX

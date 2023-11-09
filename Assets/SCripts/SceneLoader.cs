@@ -18,4 +18,16 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("PyramidsOfGiza");
     }
+    
+    public void LoadValleyofKings()
+    {
+        SceneManager.LoadScene("ValleyOfkings");
+    }
+    public void LoadTempleofRa()
+    {
+        SceneManager.LoadScene("TempleOfRa");
+    }
+    
+    
+    
 }

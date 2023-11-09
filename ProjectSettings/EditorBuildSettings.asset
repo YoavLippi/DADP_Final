@@ -11,4 +11,13 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NileRiver.unity
     guid: 5df4ed64aeab5ca49add3c2346e7192b
+  - enabled: 1
+    path: Assets/Scenes/PyramidsOfGiza.unity
+    guid: 0b9ddfb5078839e4195342b49ec76f63
+  - enabled: 1
+    path: Assets/Scenes/TempleOfRa.unity
+    guid: 56ac06dc3291d4c478bb5bd39fbba214
+  - enabled: 1
+    path: Assets/Scenes/ValleyOfTheKings.unity
+    guid: e8603eb087898b94d938bf92bca69f86
   m_configObjects: {}

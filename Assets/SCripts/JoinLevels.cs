@@ -18,6 +18,17 @@ public class JoinLevels : MonoBehaviour
                 _sceneLoader.LoadPyramidsOfGiza();
             }
             
+            if (other.CompareTag("ValleyOfKings"))
+            {
+                _sceneLoader.LoadPyramidsOfGiza();
+            }
+
+            if (other.CompareTag("TempleOfRa"))
+            {
+                _sceneLoader.LoadPyramidsOfGiza();
+            }
+            
+
         }
     
 }
