@@ -169,12 +169,12 @@ GameObject:
   - component: {fileID: 7395722321077227464}
   - component: {fileID: 7395722321077227467}
   - component: {fileID: 8848535511053862481}
+  - component: {fileID: 8417340654035636257}
+  - component: {fileID: 788284555756216974}
   - component: {fileID: 7395722321077227466}
   - component: {fileID: 2511095764145335835}
-  - component: {fileID: 8417340654035636257}
   - component: {fileID: 2479712833798014653}
   - component: {fileID: 1952301861}
-  - component: {fileID: 788284555756216974}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -269,6 +269,33 @@ MonoBehaviour:
   lookSpeed: 2
   lookXLimit: 45
   Shoot: 0
+--- !u!114 &8417340654035636257
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395722321077227479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4bf790bf3a7e9c34a8d11640f52597ce, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  midanimation: 0
+  knife: {fileID: 1938019761}
+--- !u!114 &788284555756216974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395722321077227479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580db0b3789bd2745b0d73194295b85f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneLoader: {fileID: 0}
 --- !u!114 &7395722321077227466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -312,20 +339,6 @@ MonoBehaviour:
   jumps: 2
   Cr: {fileID: 0}
   jumpforce: 1
---- !u!114 &8417340654035636257
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7395722321077227479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4bf790bf3a7e9c34a8d11640f52597ce, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  midanimation: 0
-  knife: {fileID: 1938019761}
 --- !u!143 &2479712833798014653
 CharacterController:
   m_ObjectHideFlags: 0
@@ -364,19 +377,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &788284555756216974
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7395722321077227479}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 580db0b3789bd2745b0d73194295b85f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sceneLoader: {fileID: 0}
 --- !u!1001 &2096068293
 PrefabInstance:
   m_ObjectHideFlags: 0

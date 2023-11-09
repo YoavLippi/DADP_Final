@@ -13,10 +13,8 @@ public Camera playerCamera;
 
     public float lookSpeed = 2f;
     public float lookXLimit = 45f;
- 
-    public bool Shoot;
 
-    private Vector3 moveDirection = Vector3.zero;
+    public Vector3 moveDirection = Vector3.zero;
     private float rotationX = 0;
     
     private bool canMove = true;
