@@ -7,12 +7,14 @@ using UnityEngine;
 public class PlayerCollisionManager : MonoBehaviour
 {
     private SceneLoader _sceneLoader;
+
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("NileRiver"))
         {
-            _sceneLoader.LoadNileScene();  
+            _sceneLoader.LoadNileScene();    
         }
-        
+
+
     }
 }

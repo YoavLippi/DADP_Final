@@ -3,15 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class LevelManager : MonoBehaviour
+public class NileLevel : MonoBehaviour
 {
-    private SceneLoader _sceneLoader;
+    public SceneLoader _sceneLoader;
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("PlayerCollision"))
+        if (other.CompareTag("NileRiver"))
         {
-            _sceneLoader .LoadNileScene();
+            _sceneLoader.LoadNileScene();
         }
     }
 }
+

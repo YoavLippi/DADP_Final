@@ -5,13 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+    public void LoadTheHub()
+    {
+        SceneManager.LoadScene("TheHub");
+    }
     public void LoadNileScene()
     {
         SceneManager.LoadScene("Scenes/NileRiver");
     }
-
-    public void LoadTheHub()
+    
+    public void LoadPyramidsOfGiza()
     {
-        SceneManager.LoadScene("TheHub");
+        SceneManager.LoadScene("PyramidsOfGiza");
     }
 }
