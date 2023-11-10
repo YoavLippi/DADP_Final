@@ -9,6 +9,7 @@ public class JoinLevels : MonoBehaviour
     public GameObject ValleyDoor;
     public GameObject TempleOfRaDoor;
     public GameObject PyramidsOfGizaDoor;
+    public GameObject TutorialDoor;
 
     private void OnTriggerEnter(Collider other)
         {
@@ -35,7 +36,31 @@ public class JoinLevels : MonoBehaviour
                 _sceneLoader.LoadPyramidsOfGiza();
                 Destroy(TempleOfRaDoor);
             }
-            
+
+            if (other.CompareTag("TutorialScene"))
+            { 
+                _sceneLoader.LoadTutorialScene();
+                Destroy(TutorialDoor);
+
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
         }
     

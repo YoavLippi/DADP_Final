@@ -27,7 +27,11 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("TempleOfRa");
     }
-    
+
+    public void LoadTutorialScene()
+    {
+        SceneManager.LoadScene("TutorialScene");
+    }
     
     
 }
