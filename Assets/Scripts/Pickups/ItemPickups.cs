@@ -10,8 +10,8 @@ public class ItemPickups : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             
-            //add code to add to Inventory or just update a counter
-            //Update UI
+            //add code to add to Inventory or just update a counter - Ashlynne
+            //Update UI - Ashlynne
             Destroy(this.gameObject);    
         }
     }

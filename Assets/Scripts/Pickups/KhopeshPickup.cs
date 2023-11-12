@@ -9,7 +9,7 @@ public class KhopeshPickup : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            // Dont forget to add a method that adds the khopesh to the player inventory.
+            // Dont forget to add a method that adds the khopesh to the player inventory. - Ashlynne
             Destroy(this.gameObject);
         }
     }

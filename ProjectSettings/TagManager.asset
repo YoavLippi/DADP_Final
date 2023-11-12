@@ -11,10 +11,6 @@ TagManager:
   - ValleyOfKings
   - TempleOfRa
   - TutorialScene
-  - IsisArms
-  - IsisLegs
-  - IsisTorso
-  - IsisHead
   layers:
   - Default
   - TransparentFX
