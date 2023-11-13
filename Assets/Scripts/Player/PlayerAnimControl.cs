@@ -26,10 +26,9 @@ public class PlayerAnimControl: MonoBehaviour
         }
         
         
-        
         if (Input.GetButtonDown("Fire1"))
         {
-            _anim.SetTrigger("Attack");   
+            _anim.SetInteger("AnimState" , 2);  
         }
         
     }
