@@ -9,6 +9,7 @@ public class HeadPickup : MonoBehaviour
     public TextMeshProUGUI AbilityText;
     public TextMeshProUGUI CounterText;
     public GameManager _GameManager;
+    public GameObject ExitDoor;
 
     private BoxCollider _Head;
     private float displayDuration = 1.5f;
@@ -27,6 +28,7 @@ public class HeadPickup : MonoBehaviour
             AbilityText.text = "Voice of the king acquired!";
             _GameManager.increaseBodyPartCount();
             CounterText.text = "Bodyparts collected: " + _GameManager.BodyPartsCount;
+            ExitDoor.SetActive(true);
             StartCoroutine(DeactivateTextAfterDelay());
         }
     }
