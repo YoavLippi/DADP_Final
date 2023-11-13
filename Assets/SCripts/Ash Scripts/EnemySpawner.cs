@@ -10,6 +10,8 @@ public class EnemySpawner : MonoBehaviour
     void Start()
     {
         SpawnEnemies();
+        Debug.Log("spawn");
+
     }
 
     void SpawnEnemies()
