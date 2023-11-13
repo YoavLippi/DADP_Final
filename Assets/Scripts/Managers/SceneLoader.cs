@@ -33,5 +33,14 @@ public class SceneLoader : MonoBehaviour
         SceneManager.LoadScene("TutorialScene");
     }
     
+    public void LoadStartScene()
+    {
+        SceneManager.LoadScene("StartScene");
+    }
+    public void LoadEndScene()
+    {
+        SceneManager.LoadScene("EndScene");
+    }
+    
     
 }
