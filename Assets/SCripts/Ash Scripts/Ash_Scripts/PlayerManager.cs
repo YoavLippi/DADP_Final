@@ -19,24 +19,23 @@ public class PlayerManager : MonoBehaviour
 
     public GameObject player;
 
-    public int initialHealth = 100; // Set the player's initial health
-    private int currentHealth; // To track the current health
-    public Text gameOverText; // Reference to the Game Over text element in your UI
+    public int initialHealth = 100; 
+    private int currentHealth; 
+    public Text gameOverText; 
 
     void Start()
     {
-        currentHealth = initialHealth; // Initialize the current health
-        UpdateHealthUI(); // Update the UI to show initial health
+        currentHealth = initialHealth; 
+        UpdateHealthUI(); 
     }
 
     public void TakeDamage(int damage)
     {
         currentHealth -= damage;
-        UpdateHealthUI(); // Update the UI to reflect the new health
+        UpdateHealthUI(); 
 
         if (currentHealth <= 0)
         {
-            // Player is dead - trigger game over
             GameOver();
         }
     }
