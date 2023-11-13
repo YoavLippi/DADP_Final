@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 4518009666893323502}
   - component: {fileID: 2050405838676521019}
   m_Layer: 0
-  m_Name: IsisArms
+  m_Name: OsirisArms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   CounterText: {fileID: 8336975311194734285, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
-  _GameManager: {fileID: 0}
+  _GameManager: {fileID: 7878160171462117446, guid: e4131d852644ebd4bb728cb1c0cdd712, type: 3}
 --- !u!1 &7020212701463755632
 GameObject:
   m_ObjectHideFlags: 0

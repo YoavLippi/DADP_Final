@@ -60,6 +60,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fac178e52bfdee64c9e658c947974c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  AbilityTextObj: {fileID: 5592370561337982920, guid: 68aa8a5f2e878484b830aec8f24c77bb, type: 3}
+  AbilityText: {fileID: 8465700442394032886, guid: 68aa8a5f2e878484b830aec8f24c77bb, type: 3}
 --- !u!1001 &5234108669946147709
 PrefabInstance:
   m_ObjectHideFlags: 0
