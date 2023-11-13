@@ -8,10 +8,13 @@ public class HealingItem : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerCollision"))
         {
             other.GetComponent<PlayerStats>().Heal(healAmount);
             Destroy(gameObject); 
         }
     }
+
+    
+    
 }
