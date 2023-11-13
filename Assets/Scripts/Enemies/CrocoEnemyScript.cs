@@ -8,6 +8,11 @@ public class CrocoEnemyScript : MonoBehaviour
     public float moveSpeed = 3.0f; 
     public float rotationSpeed = 3.0f;
 
+
+    private void Awake()
+    {
+        Debug.Log("awake");
+    }
     void Update()
     {
         Vector3 directionToPlayer = player.position - transform.position;
