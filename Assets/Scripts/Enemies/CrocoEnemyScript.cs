@@ -6,7 +6,7 @@ public class CrocoEnemyScript : MonoBehaviour
 {
     public Transform player; 
     public float moveSpeed = 3.0f; 
-    public float rotationSpeed = 3.0f;
+    public float rotationSpeed = 7.0f;
 
 
     private void Awake()

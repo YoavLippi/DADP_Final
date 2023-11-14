@@ -6,12 +6,40 @@ public class EnemySpawner : MonoBehaviour
 {
     public GameObject enemyPrefab; // Reference to the enemy prefab to spawn
     public Transform[] spawnPoints; // Array of spawn points for the enemies
-
+     float spawnrate=10;
+     float spawnamount=1;
+     float counter;
+    int itterations;
+  
     void Start()
     {
         SpawnEnemies();
         Debug.Log("spawn");
 
+    }
+    private void FixedUpdate()
+    {
+        counter += Time.deltaTime;
+        if (counter>spawnrate)
+        {
+            counter = 0;
+            for (int i = 0; i < spawnamount; i++)
+            {
+                SpawnEnemies();
+
+            }
+            itterations++;
+
+            if (itterations>2&&spawnrate>3)
+            {
+                spawnrate--;
+                spawnamount++;
+                itterations = 0;
+            }
+
+
+        }
+        
     }
 
     void SpawnEnemies()
@@ -23,3 +51,6 @@ public class EnemySpawner : MonoBehaviour
         }
     }
 }
+
+
+
