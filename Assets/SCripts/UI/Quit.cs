@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Quit : MonoBehaviour
 {
-    public string QuitScene = "MainStartScene";
+    public string QuitScene = "StartScene";
     public void OnQuitButtonClick()
     {
         Application.Quit();
