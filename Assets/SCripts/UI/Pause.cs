@@ -16,6 +16,9 @@ public class Pause : MonoBehaviour
         if (pauseButton != null)
         {
             pauseButton.onClick.AddListener(PauseGame);
+            Cursor.lockState = CursorLockMode.Locked;
+
+
         }
 
         if (resumeButton != null)

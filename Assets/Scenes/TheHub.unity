@@ -6973,10 +6973,6 @@ PrefabInstance:
       propertyPath: PyramidsOfGizaDoor
       value: 
       objectReference: {fileID: 995239136}
-    - target: {fileID: 1989749067828680923, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7395722321077227465, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
       propertyPath: m_RootOrder
       value: 0
