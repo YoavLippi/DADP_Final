@@ -1,54 +1,57 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerStats : MonoBehaviour
 {
     [SerializeField] private float maxHealth;
 
-    [SerializeField]private float currentHealth;
+    [SerializeField] private float currentHealth;
 
-    public HealthBar healthBar; 
+    public HealthBar healthBar;
 
     private void Start()
     {
         currentHealth = maxHealth;
-        healthBar.SetSliderMax(maxHealth); 
+        healthBar.SetSliderMax(maxHealth);
     }
 
-    public void TakeDamage (float amount)
+    public void TakeDamage(float amount)
     {
         currentHealth -= amount;
-        healthBar.SetSlider(currentHealth); 
+        healthBar.SetSlider(currentHealth);
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.K))
         {
-            TakeDamage(20f); 
+            TakeDamage(20f);
         }
 
         if (currentHealth > maxHealth)
         {
-            currentHealth = maxHealth; 
+            currentHealth = maxHealth;
         }
 
         if (currentHealth <= 0)
         {
-            Die(); 
+            Die();
         }
     }
 
     public void Heal(float amount)
     {
         currentHealth += amount;
-        healthBar.SetSlider(currentHealth); 
+        healthBar.SetSlider(currentHealth);
     }
 
     private void Die()
     {
-        Debug.Log("You died!"); 
-    }
-
+        Debug.Log("You died!");
+        SceneManager.LoadScene("DeathScene"); 
+    } 
 }
+
+
