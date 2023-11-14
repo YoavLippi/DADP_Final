@@ -7,6 +7,7 @@ using Object = System.Object;
 public class DontDestroy : MonoBehaviour
 {
     [HideInInspector] public string ObjectID;
+   
 
     private void Awake()
     {
@@ -17,7 +18,7 @@ public class DontDestroy : MonoBehaviour
     {
         for (int i = 0; i < FindObjectsOfType<DontDestroy>().Length; i++)
         {
-            if (FindObjectsOfType<DontDestroy>()[i] != this)
+            if (FindObjectsOfType<DontDestroy>()[i].name == gameObject.name)
             {
                 if (FindObjectsOfType<DontDestroy>()[i].ObjectID == ObjectID)
                 {
@@ -27,4 +28,5 @@ public class DontDestroy : MonoBehaviour
         }
         DontDestroyOnLoad(gameObject);
     }
+     
 }

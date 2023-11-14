@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
+
     public void LoadTheHub()
     {
         SceneManager.LoadScene("TheHub");
