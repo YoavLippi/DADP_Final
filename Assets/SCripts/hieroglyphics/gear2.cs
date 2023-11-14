@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class rotatae : MonoBehaviour
-{
+public class gear2 : MonoBehaviour
+{ 
     // Start is called before the first frame update
 
     public KeyCode keys;
     public ParticleSystem parts;
-
-   public int counter =0 ;
     public bool correctvalue;
+    public int counter = 0;
 
 
     private void Update()
@@ -25,7 +24,7 @@ public class rotatae : MonoBehaviour
 
         switch (counter)
         {
-            case 1:
+            case 3:
                 parts.startSize = 0f;
                 break;
 
@@ -34,10 +33,9 @@ public class rotatae : MonoBehaviour
                 // Add actions for case 2
                 break;
 
-            case 3:
+            case 1:
                 parts.startSize = 1f;
                 correctvalue = true;
-
                 // Add actions for case 3
                 break;
 
@@ -50,5 +48,7 @@ public class rotatae : MonoBehaviour
 
 
     }
-    
+
 }
+
+
