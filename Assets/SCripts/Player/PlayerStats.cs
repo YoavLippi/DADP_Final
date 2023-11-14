@@ -43,7 +43,7 @@ public class PlayerStats : MonoBehaviour
         healthBar.SetSlider(currentHealth);
     }
 
-    public void Die()
+    private void Die()
     {
         Debug.Log("You died!");
         SceneManager.LoadScene("DeathScene");

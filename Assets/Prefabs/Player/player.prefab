@@ -603,7 +603,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -170.99994, y: -32}
+  m_AnchoredPosition: {x: 113, y: -79}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &1503399320
@@ -885,7 +885,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -929, y: -447}
+  m_AnchoredPosition: {x: -653, y: -373}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2025275981
@@ -1210,7 +1210,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 1065, y: 430}
+  m_AnchoredPosition: {x: 751.45465, y: 363.74973}
   m_SizeDelta: {x: 154.909, y: 120.5}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7302364352756644375
@@ -1940,7 +1940,6 @@ GameObject:
   - component: {fileID: 212877000}
   - component: {fileID: 212877004}
   - component: {fileID: 1565221021}
-  - component: {fileID: 5092767903474514003}
   m_Layer: 0
   m_Name: PlayerCollision
   m_TagString: PlayerCollision
@@ -2042,19 +2041,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505191040295867319}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &5092767903474514003
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1505191040295867319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 580db0b3789bd2745b0d73194295b85f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _sceneLoader: {fileID: 0}
 --- !u!1 &1535892645197431998
 GameObject:
   m_ObjectHideFlags: 0
@@ -7850,6 +7836,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7395722321077227465}
   - component: {fileID: 8848535511053862481}
+  - component: {fileID: 788284555756216974}
   - component: {fileID: 7395722321077227466}
   - component: {fileID: 2511095764145335835}
   - component: {fileID: 2479712833798014653}
@@ -7901,6 +7888,24 @@ MonoBehaviour:
   lookSpeed: 2
   lookXLimit: 45
   moveDirection: {x: 0, y: 0, z: 0}
+--- !u!114 &788284555756216974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395722321077227479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 580db0b3789bd2745b0d73194295b85f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _sceneLoader: {fileID: 0}
+  NileDoor: {fileID: 0}
+  ValleyDoor: {fileID: 0}
+  TempleOfRaDoor: {fileID: 0}
+  PyramidsOfGizaDoor: {fileID: 0}
+  TutorialDoor: {fileID: 0}
 --- !u!114 &7395722321077227466
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9829,11 +9834,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 247
+      value: 501
       objectReference: {fileID: 0}
     - target: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -142
+      value: -185
       objectReference: {fileID: 0}
     - target: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
