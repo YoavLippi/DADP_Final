@@ -5245,7 +5245,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  detectionRange: 8
+  detectionRange: 9
   rotationSpeed: 3
   navMeshAgent: {fileID: 5613870006807487670}
 --- !u!195 &5613870006807487670
@@ -5258,7 +5258,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 2
+  m_Speed: 2.5
   m_Acceleration: 5
   avoidancePriority: 50
   m_AngularSpeed: 120

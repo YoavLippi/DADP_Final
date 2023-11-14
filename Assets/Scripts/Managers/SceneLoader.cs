@@ -22,7 +22,7 @@ public class SceneLoader : MonoBehaviour
     
     public void LoadValleyofKings()
     {
-        SceneManager.LoadScene("ValleyOfkings");
+        SceneManager.LoadScene("ValleyOfTheKings");
     }
     public void LoadTempleofRa()
     {
