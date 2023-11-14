@@ -11,6 +11,7 @@ TagManager:
   - ValleyOfKings
   - TempleOfRa
   - TutorialScene
+  - GameMusic
   layers:
   - Default
   - TransparentFX
