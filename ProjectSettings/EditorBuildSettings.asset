@@ -23,10 +23,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ValleyOfTheKings.unity
     guid: e8603eb087898b94d938bf92bca69f86
-  - enabled: 1
-    path: Assets/Scenes/EndScene.unity
-    guid: 2710e8e9d1c571746b800651d68af1bd
-  - enabled: 1
-    path: Assets/Scenes/StartScene.unity
-    guid: 46928561b2aab2f48b8eec2f90e02c88
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
   m_configObjects: {}

@@ -459,7 +459,7 @@ GameObject:
   - component: {fileID: 1459524260}
   - component: {fileID: 1459524259}
   - component: {fileID: 1459524261}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UiCamera
   m_TagString: Untagged
   m_Icon: {fileID: 6519382022992737161, guid: 0000000000000000d000000000000000, type: 0}
@@ -865,7 +865,7 @@ RectTransform:
   m_GameObject: {fileID: 2025275978}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 5.6854925, y: 0.75160223, z: 1.7159}
+  m_LocalScale: {x: 4.2882257, y: 0.75160223, z: 1.7159}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1934237360}
@@ -874,7 +874,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -667, y: -458}
+  m_AnchoredPosition: {x: -718, y: -458}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2025275981
@@ -6017,7 +6017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1.532929
+      value: 1.3955938
       objectReference: {fileID: 0}
     - target: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
       propertyPath: m_LocalScale.y
@@ -6057,11 +6057,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 455
+      value: 423
       objectReference: {fileID: 0}
     - target: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -127
+      value: -143
       objectReference: {fileID: 0}
     - target: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
