@@ -129,7 +129,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh51332
+  m_Name: pb_Mesh465826
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3223,6 +3223,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638118156}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &677955712 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5581927494348585643, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
+  m_PrefabInstance: {fileID: 1401070921}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &702563989
 GameObject:
   m_ObjectHideFlags: 0
@@ -5363,6 +5368,11 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1361731049}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1362741634 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5391472576067303553, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
+  m_PrefabInstance: {fileID: 1401070921}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1373704972
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5633,29 +5643,13 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 278485854440861737, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.257
+    - target: {fileID: 2634109490457976336, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
+      propertyPath: m_Name
+      value: 'River  Narrative Panel  '
       objectReference: {fileID: 0}
-    - target: {fileID: 3364385331375283610, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: -168.99994
-      objectReference: {fileID: 0}
-    - target: {fileID: 5659556391210548879, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
-      propertyPath: m_Height
-      value: 2.246071
-      objectReference: {fileID: 0}
-    - target: {fileID: 5659556391210548879, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
-      propertyPath: m_Center.x
-      value: 0.00070799596
-      objectReference: {fileID: 0}
-    - target: {fileID: 5659556391210548879, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
-      propertyPath: m_Center.y
-      value: -0.1092565
-      objectReference: {fileID: 0}
-    - target: {fileID: 5659556391210548879, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
-      propertyPath: m_Center.z
-      value: 5.1373673e-18
+    - target: {fileID: 2634109490457976336, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7395722321077227465, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
       propertyPath: m_RootOrder
@@ -6838,6 +6832,65 @@ Transform:
   m_Children: []
   m_Father: {fileID: 398276812}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1671967934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1671967937}
+  - component: {fileID: 1671967936}
+  - component: {fileID: 1671967935}
+  m_Layer: 0
+  m_Name: 'Arms trigger '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1671967935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671967934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd4bb8201997d94fb7292c8529209bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIpanel: {fileID: 677955712}
+--- !u!135 &1671967936
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671967934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 1.5251093
+  m_Center: {x: 0, y: -0.37017822, z: 0}
+--- !u!4 &1671967937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1671967934}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 606.1846, y: 8.482924, z: -115.210075}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1730534942
 GameObject:
@@ -8529,6 +8582,65 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1955456041
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1955456044}
+  - component: {fileID: 1955456043}
+  - component: {fileID: 1955456042}
+  m_Layer: 0
+  m_Name: 'River trigger '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1955456042
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955456041}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8dd4bb8201997d94fb7292c8529209bd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UIpanel: {fileID: 1362741634}
+--- !u!135 &1955456043
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955456041}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 4.859274
+  m_Center: {x: -1.9419765, y: 0, z: -6.3012505}
+--- !u!4 &1955456044
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1955456041}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -300.72, y: 9.73, z: 92.61794}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1985363084
 GameObject:
   m_ObjectHideFlags: 0
