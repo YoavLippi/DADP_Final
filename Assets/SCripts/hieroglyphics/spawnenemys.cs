@@ -6,6 +6,7 @@ public class spawnenemys : MonoBehaviour
 {
     public GameObject player;
     public bool spawnedenemy;
+   public  GameObject task2;
     // Start is called before the first frame update
     private void Update()
     {
@@ -15,6 +16,7 @@ public class spawnenemys : MonoBehaviour
             {
                 Debug.Log(true);
                 spawnedenemy = true;
+                task2.SetActive(true);
             }
         }
     }

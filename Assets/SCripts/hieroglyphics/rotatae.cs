@@ -27,10 +27,12 @@ public class rotatae : MonoBehaviour
         {
             case 1:
                 parts.startSize = 0f;
+                correctvalue = false;
                 break;
 
             case 2:
                 parts.startSize = 0.5f;
+                correctvalue = false;
                 // Add actions for case 2
                 break;
 
@@ -43,10 +45,14 @@ public class rotatae : MonoBehaviour
 
             case 4:
                 parts.startSize = 0.5f;
+                correctvalue = false;
                 // Add actions for default case
                 break;
         }
-
+        if (counter == 5)
+        {
+            counter = 1;
+        }
 
 
     }
