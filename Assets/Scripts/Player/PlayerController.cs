@@ -5,7 +5,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-public Camera playerCamera;
+    public Camera playerCamera;
     public float walkSpeed = 6f;
     public float runSpeed = 12f;
     public float JumpPower = 7f;
@@ -70,7 +70,7 @@ public Camera playerCamera;
         #region Handles Rotation
             _characterController.Move(moveDirection * Time.deltaTime);
 
-            if (canMove)
+            if (canMove && Time.timeScale != 0)
             {
                 rotationX += -Input.GetAxis("Mouse Y") * lookSpeed;
                 rotationX = Math.Clamp(rotationX, -lookXLimit, lookXLimit);

@@ -12,6 +12,8 @@ TagManager:
   - TempleOfRa
   - TutorialScene
   - GameMusic
+  - Crcodile
+  - ENEMY
   layers:
   - Default
   - TransparentFX

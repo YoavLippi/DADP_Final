@@ -5,7 +5,8 @@ using UnityEngine;
 public class PlayerAnimControl: MonoBehaviour
 {
     private Animator _anim;          
-    private PlayerController _playerController;  
+    private PlayerController _playerController;
+    public KhopeshAttack _KhopeshAttack;
 
     void Start()
     {
@@ -22,7 +23,7 @@ public class PlayerAnimControl: MonoBehaviour
         }
         else
         {
-            _anim.SetInteger("AnimState", 1);   // Play Walk animation
+            _anim.SetInteger("AnimState", 1);   // Play Walk anwimation
         }
         
         
@@ -30,6 +31,8 @@ public class PlayerAnimControl: MonoBehaviour
         {
             _anim.SetInteger("AnimState" , 2);  
         }
+
+        _KhopeshAttack.isAttacking = (_anim.GetInteger("AnimState") == 2);
         
     }
 }

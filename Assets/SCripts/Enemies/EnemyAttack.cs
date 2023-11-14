@@ -6,29 +6,27 @@ public class EnemyAttack : MonoBehaviour
 {
     public float damageAmount;
     public float damageInterval;
+    private bool onCooldown = false;
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("PlayerCollision"))
         {
-            Debug.Log("Colliding");
-            StartCoroutine(InflictDamageRepeatedly(other.gameObject));
+            if (!onCooldown)
+            {
+                StartCoroutine(InflictDamage(other.gameObject));    
+            }
+           
         }
     }
+    
 
-    private void OnTriggerExit(Collider other)
+    private IEnumerator InflictDamage(GameObject player)
     {
-        if (other.CompareTag("PlayerCollision"))
-        {
-            StopCoroutine(InflictDamageRepeatedly(other.gameObject));
-        }
-    }
+        player.GetComponent<PlayerStats>().TakeDamage(damageAmount);
+        onCooldown = true;
+        yield return new WaitForSeconds(damageInterval);
+        onCooldown = false;
 
-    private IEnumerator InflictDamageRepeatedly(GameObject player)
-    {
-        while (true)
-        {
-            yield return new WaitForSeconds(damageInterval);
-            player.GetComponent<PlayerStats>().TakeDamage(damageAmount);
-        }
     }
+    
 }

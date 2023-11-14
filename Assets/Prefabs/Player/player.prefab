@@ -595,7 +595,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 28, y: -25}
+  m_AnchoredPosition: {x: 113, y: -79}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &1503399320
@@ -1730,7 +1730,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505191040295867319}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.15, y: -0.107, z: 0}
+  m_LocalPosition: {x: 0.15, y: -0.107, z: -0.257}
   m_LocalScale: {x: 1, y: 1.0584277, z: 0.84939}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1748,9 +1748,9 @@ CapsuleCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   m_Radius: 0.5007079
-  m_Height: 2.49842
+  m_Height: 2.246071
   m_Direction: 1
-  m_Center: {x: 0.0007079959, y: -0.23543097, z: 0}
+  m_Center: {x: 0.00070799596, y: -0.1092565, z: 5.1373673e-18}
 --- !u!23 &212877000
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3481,7 +3481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.00012207031, y: 0.00018310547}
+  m_AnchoredPosition: {x: -274, y: 0.00018310547}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &6641071022812027981
@@ -4187,6 +4187,8 @@ GameObject:
   - component: {fileID: 8584338426584946721}
   - component: {fileID: 8946252723438614826}
   - component: {fileID: 1712277790869473883}
+  - component: {fileID: 729019886}
+  - component: {fileID: 729019885}
   m_Layer: 0
   m_Name: Khopesh
   m_TagString: Untagged
@@ -4260,6 +4262,32 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &729019886
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5450893016271444754}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0105802715, y: 0.0011914818, z: 0.11646898}
+  m_Center: {x: 0.027470263, y: 0.029236462, z: 0.11265201}
+--- !u!114 &729019885
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5450893016271444754}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46d88fea33fad6b429e65896cbdf9210, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isAttacking: 0
 --- !u!1 &5451511319128318428
 GameObject:
   m_ObjectHideFlags: 0
@@ -5275,6 +5303,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4bf790bf3a7e9c34a8d11640f52597ce, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _KhopeshAttack: {fileID: 729019885}
 --- !u!95 &2345248787895510285
 Animator:
   serializedVersion: 5
@@ -7402,7 +7431,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -76.53932
+      value: -77
       objectReference: {fileID: 0}
     - target: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
       propertyPath: m_LocalRotation.w
@@ -7422,11 +7451,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 423
+      value: 501
       objectReference: {fileID: 0}
     - target: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -143
+      value: -185
       objectReference: {fileID: 0}
     - target: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

@@ -25,11 +25,7 @@ public class PlayerStats : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.K))
-        {
-            TakeDamage(20f);
-        }
-
+        
         if (currentHealth > maxHealth)
         {
             currentHealth = maxHealth;
