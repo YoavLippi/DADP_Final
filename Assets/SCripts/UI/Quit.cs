@@ -11,5 +11,6 @@ public class Quit : MonoBehaviour
         Application.Quit();
         SceneManager.LoadScene(QuitScene);
         Debug.Log("Quit button was clicked");
+        Cursor.lockState = CursorLockMode.None;
     }
 }

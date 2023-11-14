@@ -2461,7 +2461,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &3364385331375283610
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2481,7 +2481,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -169, y: 10.577026}
+  m_AnchoredPosition: {x: 101.24298, y: 29.003998}
   m_SizeDelta: {x: -585.684, y: -412.844}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &5140847710371593456
@@ -3454,7 +3454,7 @@ GameObject:
   - component: {fileID: 6641071022812027981}
   - component: {fileID: 5132972698358683036}
   m_Layer: 5
-  m_Name: 'Panel '
+  m_Name: 'Pause Panel '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5840,6 +5840,7 @@ GameObject:
   - component: {fileID: 7395722321077227466}
   - component: {fileID: 2511095764145335835}
   - component: {fileID: 2479712833798014653}
+  - component: {fileID: 70129879816139922}
   m_Layer: 0
   m_Name: player
   m_TagString: Player
@@ -5966,6 +5967,33 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &70129879816139922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7395722321077227479}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef33e325b049fb74ba0362697a317a43, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnBodyPartsCollected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 5877884821896833586}
+        m_TargetAssemblyTypeName: BodyPickUpUI, Assembly-CSharp
+        m_MethodName: UpdateCounterText
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &7417594899833319653
 GameObject:
   m_ObjectHideFlags: 0
@@ -7489,6 +7517,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8336975311194734284, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
   m_PrefabInstance: {fileID: 2538781641028369963}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5877884821896833586 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8262382836570739737, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
+  m_PrefabInstance: {fileID: 2538781641028369963}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20878be62db3bd4489c6ae936b745086, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4010976179656156568
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7498,23 +7537,23 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1738693078257000984, guid: d1e434db2fadd6e45a29564aeee9b7a7, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1738693078257000984, guid: d1e434db2fadd6e45a29564aeee9b7a7, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6637799572061051715, guid: d1e434db2fadd6e45a29564aeee9b7a7, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6637799572061051715, guid: d1e434db2fadd6e45a29564aeee9b7a7, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6637799572061051715, guid: d1e434db2fadd6e45a29564aeee9b7a7, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8845323872737090440, guid: d1e434db2fadd6e45a29564aeee9b7a7, type: 3}
       propertyPath: m_Pivot.x
@@ -7618,7 +7657,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8845323872737090443, guid: d1e434db2fadd6e45a29564aeee9b7a7, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d1e434db2fadd6e45a29564aeee9b7a7, type: 3}

@@ -46,7 +46,8 @@ public class PlayerStats : MonoBehaviour
     private void Die()
     {
         Debug.Log("You died!");
-        SceneManager.LoadScene("DeathScene"); 
+        SceneManager.LoadScene("DeathScene");
+        Cursor.lockState = CursorLockMode.None;
     } 
 }
 

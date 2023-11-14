@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 933729723076278308}
   - component: {fileID: 933729723076278309}
   - component: {fileID: 933729723076278314}
+  - component: {fileID: 4746940541667686372}
   m_Layer: 0
   m_Name: OsirisTorso
   m_TagString: Untagged
@@ -180,6 +181,18 @@ MonoBehaviour:
   AbilityText: {fileID: 8465700442394032886, guid: 68aa8a5f2e878484b830aec8f24c77bb, type: 3}
   CounterText: {fileID: 8336975311194734285, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
   _GameManager: {fileID: 7878160171462117446, guid: e4131d852644ebd4bb728cb1c0cdd712, type: 3}
+--- !u!114 &4746940541667686372
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 933729723076278315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd2ae0a8ddfac14eaac4e3f22277c36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6755203593171530325
 PrefabInstance:
   m_ObjectHideFlags: 0

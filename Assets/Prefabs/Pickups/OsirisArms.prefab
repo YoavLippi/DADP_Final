@@ -94,6 +94,7 @@ GameObject:
   - component: {fileID: 3525569539316400776}
   - component: {fileID: 4518009666893323502}
   - component: {fileID: 2050405838676521019}
+  - component: {fileID: 1309951614917109525}
   m_Layer: 0
   m_Name: OsirisArms
   m_TagString: Untagged
@@ -146,6 +147,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CounterText: {fileID: 8336975311194734285, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
   _GameManager: {fileID: 7878160171462117446, guid: e4131d852644ebd4bb728cb1c0cdd712, type: 3}
+--- !u!114 &1309951614917109525
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3734352581017543798}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4fd2ae0a8ddfac14eaac4e3f22277c36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &7020212701463755632
 GameObject:
   m_ObjectHideFlags: 0

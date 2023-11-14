@@ -10,5 +10,6 @@ public class StartBtn : MonoBehaviour
     public void onStartButtonClick()
     {
         SceneManager.LoadScene(Intro);
+        Cursor.lockState = CursorLockMode.None;
     }
 }
