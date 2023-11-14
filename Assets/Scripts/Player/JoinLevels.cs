@@ -27,13 +27,13 @@ public class JoinLevels : MonoBehaviour
             
             if (other.CompareTag("ValleyOfKings"))
             {
-                _sceneLoader.LoadPyramidsOfGiza();
+                _sceneLoader.LoadValleyofKings();
                 Destroy(ValleyDoor);
             }
 
             if (other.CompareTag("TempleOfRa"))
             {
-                _sceneLoader.LoadPyramidsOfGiza();
+                _sceneLoader.LoadTempleofRa();
                 Destroy(TempleOfRaDoor);
             }
 
