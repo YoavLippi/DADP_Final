@@ -31,32 +31,29 @@ public class moveplane : MonoBehaviour
     }
 
     void Update()
-    {
-      
-        transform.position  = Vector3.MoveTowards(transform.position, checkpoiints[currentIndex].transform.position, speed * Time.deltaTime);
+    {  transform.position = Vector3.MoveTowards(transform.position, checkpoiints[currentIndex].transform.position, speed * Time.deltaTime);
 
         if (checkpoiints[currentIndex].transform.position == transform.position)
         {
             currentIndex++;
 
+            // Check if currentIndex exceeds the number of checkpoints
+            if (currentIndex >= checkpoiints.Count)
+            {
+                currentIndex = 0; // Reset to the first checkpoint
+            }
         }
 
-        Quaternion targetRotation = Quaternion.LookRotation(checkpoiints[currentIndex].transform.position - (checkpoiints[currentIndex - 1].transform.position)) * Quaternion.Euler(0, 90, 0);
+        int previousIndex = Mathf.Max(0, currentIndex - 1); // Ensure the index is not negative
+        Quaternion targetRotation = Quaternion.LookRotation(checkpoiints[currentIndex].transform.position - checkpoiints[previousIndex].transform.position) * Quaternion.Euler(0, 90, 0);
 
-
-      boat.transform.rotation = Quaternion.Slerp(boat.transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
-
+        boat.transform.rotation = Quaternion.Slerp(boat.transform.rotation, targetRotation, rotationSpeed * Time.deltaTime);
     }
-
     private void OnCollisionEnter(Collision collision)
     {
       //  Debug.Log(collision.gameObject.name);
         if (collision.gameObject.name == "player")
         {
-
-
-          
-          
             ps.TakeDamage(100);
         }
     }
