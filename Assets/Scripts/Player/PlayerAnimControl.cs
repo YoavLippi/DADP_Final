@@ -29,10 +29,35 @@ public class PlayerAnimControl: MonoBehaviour
         
         if (Input.GetButtonDown("Fire1"))
         {
-            _anim.SetInteger("AnimState" , 2);  
+            _anim.SetInteger("AnimState" , 2);
+            if (!_KhopeshAttack.isAttacking)
+            {
+                StartCoroutine(waitForAnimation());
+            }
         }
-
-        _KhopeshAttack.isAttacking = (_anim.GetInteger("AnimState") == 2);
         
+    }
+
+    private IEnumerator waitForAnimation()
+    {
+        bool switcher = false;
+        while (true)
+        {
+            yield return new WaitForFixedUpdate();
+            if (_anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+            {
+                _KhopeshAttack.isAttacking = true;
+                switcher = true;
+            }
+
+            if (switcher)
+            {
+                if (!_anim.GetCurrentAnimatorStateInfo(0).IsName("Attack"))
+                {
+                    _KhopeshAttack.isAttacking = false;
+                    break;
+                }
+            }
+        }
     }
 }
