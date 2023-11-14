@@ -177,11 +177,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _VOTK: {fileID: 7395722321077227466, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
-  AbilityTextObj: {fileID: 5592370561337982920, guid: 68aa8a5f2e878484b830aec8f24c77bb, type: 3}
-  AbilityText: {fileID: 8465700442394032886, guid: 68aa8a5f2e878484b830aec8f24c77bb, type: 3}
-  CounterText: {fileID: 8336975311194734285, guid: 30f9f6be95662c6489ef0b80601a7959, type: 3}
-  _GameManager: {fileID: 7878160171462117446, guid: e4131d852644ebd4bb728cb1c0cdd712, type: 3}
-  ExitDoor: {fileID: 0}
+  ExitDoor: {fileID: 5085966436250226626, guid: 8c7fed4757b8a5f458ca535a92ac9f23, type: 3}
 --- !u!114 &3834893050604287484
 MonoBehaviour:
   m_ObjectHideFlags: 0

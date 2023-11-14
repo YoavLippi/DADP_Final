@@ -6,9 +6,6 @@ using TMPro;
 
 public class BowPickup : MonoBehaviour
 {
-    public GameObject AbilityTextObj;
-    public TextMeshProUGUI AbilityText;
-
     private BoxCollider _Bow;
     private float displayDuration = 1.5f;
 
@@ -22,8 +19,6 @@ public class BowPickup : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _Bow.enabled = false;
-            AbilityTextObj.SetActive(true);
-            AbilityText.text = "Bow Acquired";
             StartCoroutine(DeactivateTextAfterDelay());
         }
     }
@@ -31,9 +26,6 @@ public class BowPickup : MonoBehaviour
     IEnumerator DeactivateTextAfterDelay()
     {
         yield return new WaitForSeconds(displayDuration);
-        
-        AbilityText.text = "";
-        AbilityTextObj.SetActive(false);
         Destroy(this.gameObject);
     }
 }

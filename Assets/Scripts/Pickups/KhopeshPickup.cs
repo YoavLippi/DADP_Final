@@ -6,35 +6,15 @@ using TMPro;
 
 public class KhopeshPickup : MonoBehaviour
 {
-    public GameObject AbilityTextObj;
-    public TextMeshProUGUI AbilityText;
+    public GameObject _Khopesh;
 
-    private BoxCollider _Khopesh;
-    private float displayDuration = 1.5f;
-
-    private void Start()
-    {
-        _Khopesh = gameObject.GetComponent<BoxCollider>();
-    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.CompareTag("Player"))
         {
-            _Khopesh.enabled = false;
-            AbilityTextObj.SetActive(true);
-            AbilityText.text = "Khopesh Acquired";
-            StartCoroutine(DeactivateTextAfterDelay());
+            _Khopesh.SetActive(true);
+            Destroy(this.gameObject);
         }
     }
-    
-    IEnumerator DeactivateTextAfterDelay()
-    {
-        yield return new WaitForSeconds(displayDuration);
-        
-        AbilityText.text = "";
-        AbilityTextObj.SetActive(false);
-        Destroy(this.gameObject);
-    }
 }
-
