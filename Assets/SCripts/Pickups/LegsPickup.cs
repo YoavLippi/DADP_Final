@@ -18,7 +18,7 @@ public class LegsPickup : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("PlayerCollision"))
         {
             _Torso.enabled = false;
             ExitDoor.SetActive(true);

@@ -531,7 +531,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1e5bcc3d6a938f46b023fbc7cea33ba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Intro: TheHub
+  Intro: TutorialScene
 --- !u!114 &425673153
 MonoBehaviour:
   m_ObjectHideFlags: 0

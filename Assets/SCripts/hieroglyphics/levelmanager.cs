@@ -12,6 +12,7 @@ public class levelmanager : MonoBehaviour
     public bool pyramid1, pyramid2, pyramid3;
     public GameObject task1,task3;
     public GameObject bodypart;
+    public GameObject ExitDoor;
 
     void Update()
     {
@@ -32,7 +33,7 @@ public class levelmanager : MonoBehaviour
         }
         if (g3.correctvalue)
         {
-            truespinner = true;
+            truespinner3 = true;
         }
         else
         {
@@ -65,7 +66,7 @@ public class levelmanager : MonoBehaviour
         }
         if (truespinner==true&& truespinner2 == true && truespinner3 == true && pyramid1 == true && pyramid2 == true && pyramid3 == true )
         {
-            //display bodypart
+            ExitDoor.SetActive(true);
             bodypart.SetActive(true);
         }
 
