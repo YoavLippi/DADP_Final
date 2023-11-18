@@ -12,13 +12,7 @@ public class levelmanager : MonoBehaviour
     public bool pyramid1, pyramid2, pyramid3;
     public GameObject task1,task3;
     public GameObject bodypart;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
     void Update()
     {
         if (g1.correctvalue)

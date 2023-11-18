@@ -18,7 +18,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2339371466045094777
 Transform:
   m_ObjectHideFlags: 0
@@ -50,6 +50,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _Doublejump: {fileID: 2511095764145335835, guid: 9615555be9786ec4383b07dab4bd6bb1, type: 3}
+  ExitDoor: {fileID: 0}
 --- !u!65 &2339371466045094776
 BoxCollider:
   m_ObjectHideFlags: 0

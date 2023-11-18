@@ -12,7 +12,7 @@ public class BodyPickUpUI : MonoBehaviour
     }
     public void UpdateCounterText(PlayerInventory playerInventory)
     {
-        counterText.text = "Body Parts Collectd:"  + playerInventory.NumberOfBodyParts.ToString();
+        counterText.text = "Body Parts Collected:"  + playerInventory.NumberOfBodyParts.ToString();
     }
 
 }

@@ -1,20 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
+
 
 public class waterdamage : MonoBehaviour
 {
-   public  PlayerStats ps;
-    // Start is called before the first frame update
-    private void OnCollisionEnter(Collision collision)
+    public SceneLoader _sceneLoader;
+  
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.name == "player")
+        Debug.Log("Collided with water");
+        if (other.CompareTag("PlayerCollision"))
         {
-
-
-            //Debug.Log("took damage");
-           
-            ps.TakeDamage(100);
+            _sceneLoader.loadEndScene();
         }
 
     }

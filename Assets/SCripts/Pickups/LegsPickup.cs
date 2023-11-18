@@ -9,6 +9,7 @@ public class LegsPickup : MonoBehaviour
     public doublejump _Doublejump;
     private BoxCollider _Torso;
     private float displayDuration = 1.5f;
+    public GameObject ExitDoor;
 
     private void Start()
     {
@@ -20,6 +21,7 @@ public class LegsPickup : MonoBehaviour
         if (other.CompareTag("Player"))
         {
             _Torso.enabled = false;
+            ExitDoor.SetActive(true);
             StartCoroutine(DeactivateTextAfterDelay());
         }
     }

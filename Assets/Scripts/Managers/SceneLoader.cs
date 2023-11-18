@@ -33,6 +33,11 @@ public class SceneLoader : MonoBehaviour
     {
         SceneManager.LoadScene("TutorialScene");
     }
-    
-    
+
+    public void loadEndScene()
+    {
+        SceneManager.LoadScene("DeathScene");
+    }
+
+
 }

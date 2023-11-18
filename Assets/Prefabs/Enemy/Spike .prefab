@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 4986217273297618662}
   - component: {fileID: 4986217273297618663}
   - component: {fileID: 4986217273297618659}
-  - component: {fileID: 4986217273297618656}
+  - component: {fileID: 4428496283384670977}
   m_Layer: 0
   m_Name: 'Spike '
   m_TagString: Untagged
@@ -98,7 +98,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.04148775, y: 0.0414932, z: 0.010408096}
   m_Center: {x: -0.017286563, y: 0.017288838, z: 0.005204048}
---- !u!114 &4986217273297618656
+--- !u!114 &4428496283384670977
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -107,7 +107,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4986217273297618660}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94162bb887db28f4f96506610b72f845, type: 3}
+  m_Script: {fileID: 11500000, guid: 9ec3566b8874f4e4887fd28bd286ecea, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _sceneLoader: {fileID: 8451113294179499014, guid: 6e0d903bf1a415546bc703beb63894ba, type: 3}
+  _sceneManager: {fileID: 8451113294179499014, guid: 6e0d903bf1a415546bc703beb63894ba, type: 3}

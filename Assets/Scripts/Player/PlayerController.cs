@@ -10,21 +10,19 @@ public class PlayerController : MonoBehaviour
     public float runSpeed = 12f;
     public float JumpPower = 7f;
     public float gravity = 10f;
-
     public float lookSpeed = 2f;
     public float lookXLimit = 45f;
-
     public Vector3 moveDirection = Vector3.zero;
+
     private float rotationX = 0;
-    
     private bool canMove = true;
     private int jumps;
+    
 
     private CharacterController _characterController;
 
     public void Start()
     {
-        
         _characterController = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
