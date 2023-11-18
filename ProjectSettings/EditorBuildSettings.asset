@@ -12,11 +12,11 @@ EditorBuildSettings:
     path: Assets/Scenes/Intro.unity
     guid: 8c1342834a9630e4dbba627075b31f8c
   - enabled: 1
-    path: Assets/Scenes/TheHub.unity
-    guid: 1c5d552b70458654fbb9534d9a80a5cf
-  - enabled: 1
     path: Assets/Scenes/TutorialScene.unity
     guid: a7274296ddb56c2499eaa3bf6c733996
+  - enabled: 1
+    path: Assets/Scenes/TheHub.unity
+    guid: 1c5d552b70458654fbb9534d9a80a5cf
   - enabled: 1
     path: Assets/Scenes/NileRiver.unity
     guid: 5df4ed64aeab5ca49add3c2346e7192b
